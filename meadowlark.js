@@ -26,6 +26,18 @@ app.get('/about', function (req, res) {
 	});
 });
 
+app.get('/tours/hood-river', function (req, res) {
+	res.render('tours/hood-river');
+});
+
+app.get('/tours/oregon-coast', function (req, res) {
+	res.render('tours/oregon-coast');
+});
+
+app.get('/tours/request-group-rate', function (req, res) {
+	res.render('tours/request-group-rate');
+});
+
 // catch-all handler (middleware)
 app.use(function (req, res, next) {
 	res.status(404);
