@@ -15,12 +15,12 @@ suite('fortune cookie tests', function () {
 			randomElem = fortune.getFortune,
 			randomElemsArray = fortune.fCookies,
 			randomTest = {
-				getArray: function (arr) {
+				getArray: function () {
 					var arr = arr || [], i;
 
 					for (i = 0; i < randomRuns; i++) {
 						arr.push(randomElem());
-					};
+					}
 
 					return arr;
 				},
